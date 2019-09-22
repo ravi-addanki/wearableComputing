@@ -24,6 +24,14 @@ Col_Data[c(317:330, 396:409, 475:488), 2] <-
     paste0(Col_Data[c(317:330, 396:409, 475:488), 2] , "Y")
 Col_Data[c(331:344, 410:423, 489:502), 2] <-
     paste0(Col_Data[c(331:344, 410:423, 489:502), 2] , "Z")
+# Add descriptions
+Col_Data[,2] <- gsub("^t","TimeDomain",Col_Data$V2)
+Col_Data[,2] <- gsub("^f","FrequencyDomain",Col_Data$V2)
+Col_Data[,2] <- gsub("Gyro","Gyroscope",Col_Data$V2)
+Col_Data[,2] <- gsub("Acc","Accelerometer",Col_Data$V2)
+Col_Data[,2] <- gsub("Mag","Magnitude",Col_Data$V2)
+Col_Data[,2] <- gsub("std","StandardDeviation",Col_Data$V2)
+Col_Data[,2] <- gsub("mean","Mean",Col_Data$V2)
 #  avoid special characters in variable names.
 DataColNames <-
     gsub(",", "c", gsub("\\)", "", gsub("\\(", "", gsub("-", "", Col_Data$V2))))
@@ -145,7 +153,7 @@ tidyData <-
 # name first two columns of tidy data set appropriately
 colnames(tidyData)[1:2] <- c("activityname", "subject")
 # write tidy data set to the file
-if (!dir.exists("./output"))
-    dir.create("./output")
-write.table(tidyData,"./output/tidyDataSet.txt",row.name = FALSE,append = FALSE, quote =FALSE )
+if (!dir.exists("./output1"))
+    dir.create("./output1")
+write.table(tidyData,"./output1/tidyDataSet.txt",row.name = FALSE,append = FALSE, quote =FALSE )
 

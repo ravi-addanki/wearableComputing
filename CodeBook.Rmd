@@ -30,6 +30,94 @@ This version provides the original raw inertial signals from the smartphone sens
    activityname  - gives the description of activity (standing, sitting, lying,walking, walking downstairs and walking upstairs)
    subject gives the sequence number given to participant. Details of participants are not avaialble, to protect privacy.
 
+Note: activityname can be single value from set (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+Variable                                                          	type	Units
+activityname                                                      	Character 
+subject                                                           	Integer
+TimeDomainBodyAccelerometerMeanX                                  	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerMeanY                                  	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerMeanZ                                  	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerStandardDeviationX                     	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerStandardDeviationY                     	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerStandardDeviationZ                     	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerMeanX                               	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerMeanY                               	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerMeanZ                               	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerStandardDeviationX                  	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerStandardDeviationY                  	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerStandardDeviationZ                  	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkMeanX                              	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkMeanY                              	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkMeanZ                              	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkStandardDeviationX                 	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkStandardDeviationY                 	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkStandardDeviationZ                 	numeric	standard gravity units 'g'
+TimeDomainBodyGyroscopeMeanX                                      	numeric	radians/sec
+TimeDomainBodyGyroscopeMeanY                                      	numeric	radians/sec
+TimeDomainBodyGyroscopeMeanZ                                      	numeric	radians/sec
+TimeDomainBodyGyroscopeStandardDeviationX                         	numeric	radians/sec
+TimeDomainBodyGyroscopeStandardDeviationY                         	numeric	radians/sec
+TimeDomainBodyGyroscopeStandardDeviationZ                         	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkMeanX                                  	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkMeanY                                  	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkMeanZ                                  	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkStandardDeviationX                     	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkStandardDeviationY                     	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkStandardDeviationZ                     	numeric	radians/sec
+TimeDomainBodyAccelerometerMagnitudeMean                          	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerMagnitudeStandardDeviation             	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerMagnitudeMean                       	numeric	standard gravity units 'g'
+TimeDomainGravityAccelerometerMagnitudeStandardDeviation          	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkMagnitudeMean                      	numeric	standard gravity units 'g'
+TimeDomainBodyAccelerometerJerkMagnitudeStandardDeviation         	numeric	standard gravity units 'g'
+TimeDomainBodyGyroscopeMagnitudeMean                              	numeric	radians/sec
+TimeDomainBodyGyroscopeMagnitudeStandardDeviation                 	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkMagnitudeMean                          	numeric	radians/sec
+TimeDomainBodyGyroscopeJerkMagnitudeStandardDeviation             	numeric	radians/sec
+FrequencyDomainBodyAccelerometerMeanX                             	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMeanY                             	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMeanZ                             	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerStandardDeviationX                	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerStandardDeviationY                	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerStandardDeviationZ                	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMeanFreqX                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMeanFreqY                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMeanFreqZ                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanX                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanY                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanZ                         	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkStandardDeviationX            	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkStandardDeviationY            	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkStandardDeviationZ            	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanFreqX                     	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanFreqY                     	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerJerkMeanFreqZ                     	numeric	standard gravity units 'g'
+FrequencyDomainBodyGyroscopeMeanX                                 	numeric	radians/sec
+FrequencyDomainBodyGyroscopeMeanY                                 	numeric	radians/sec
+FrequencyDomainBodyGyroscopeMeanZ                                 	numeric	radians/sec
+FrequencyDomainBodyGyroscopeStandardDeviationX                    	numeric	radians/sec
+FrequencyDomainBodyGyroscopeStandardDeviationY                    	numeric	radians/sec
+FrequencyDomainBodyGyroscopeStandardDeviationZ                    	numeric	radians/sec
+FrequencyDomainBodyGyroscopeMeanFreqX                             	numeric	radians/sec
+FrequencyDomainBodyGyroscopeMeanFreqY                             	numeric	radians/sec
+FrequencyDomainBodyGyroscopeMeanFreqZ                             	numeric	radians/sec
+FrequencyDomainBodyAccelerometerMagnitudeMean                     	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMagnitudeStandardDeviation        	numeric	standard gravity units 'g'
+FrequencyDomainBodyAccelerometerMagnitudeMeanFreq                 	numeric	standard gravity units 'g'
+FrequencyDomainBodyBodyAccelerometerJerkMagnitudeMean             	numeric	standard gravity units 'g'
+FrequencyDomainBodyBodyAccelerometerJerkMagnitudeStandardDeviation	numeric	standard gravity units 'g'
+FrequencyDomainBodyBodyAccelerometerJerkMagnitudeMeanFreq         	numeric	standard gravity units 'g'
+FrequencyDomainBodyBodyGyroscopeMagnitudeMean                     	numeric	radians/sec
+FrequencyDomainBodyBodyGyroscopeMagnitudeStandardDeviation        	numeric	radians/sec
+FrequencyDomainBodyBodyGyroscopeMagnitudeMeanFreq                 	numeric	radians/sec
+FrequencyDomainBodyBodyGyroscopeJerkMagnitudeMean                 	numeric	radians/sec
+FrequencyDomainBodyBodyGyroscopeJerkMagnitudeStandardDeviation    	numeric	radians/sec
+FrequencyDomainBodyBodyGyroscopeJerkMagnitudeMeanFreq             	numeric	radians/sec
+
+
+
+
 ## Prepared tidy data set
  You may find the prepared tidy data set at "./output1/tidyDataSet.txt" 
 
