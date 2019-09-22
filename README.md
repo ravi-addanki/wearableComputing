@@ -14,5 +14,7 @@
 # You may run the code by using source("./run_analysis.R") when the directory is
 #   project directory.However, There is one manual step that requires unzipping of
 #   files using appropriate software (I used 7zip).
+#  Read the codebook.Rmd file avaialble with this project for the code book.
+# also find the file "./output1/tidyDataSet.txt" for the final tidy dataset
 # 
 

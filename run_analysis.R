@@ -144,3 +144,8 @@ tidyData <-
     )
 # name first two columns of tidy data set appropriately
 colnames(tidyData)[1:2] <- c("activityname", "subject")
+# write tidy data set to the file
+if (!dir.exists("./output"))
+    dir.create("./output")
+write.table(tidyData,"./output/tidyDataSet.txt",row.name = FALSE,append = FALSE, quote =FALSE )
+
