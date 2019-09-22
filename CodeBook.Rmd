@@ -27,6 +27,8 @@ This version provides the original raw inertial signals from the smartphone sens
 ## Additional Variables
 
    The descriptions of variables can be found in features.txt file in the zipfile of original data set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The special characters like "(" or ")" or "-" or "," are avoided in variable names per standard practices.
+   activityname  - gives the description of activity (standing, sitting, lying,walking, walking downstairs and walking upstairs)
+   subject gives the sequence number given to participant. Details of participants are not avaialble, to protect privacy.
 
 ## Prepared tidy data set
  You may find the prepared tidy data set at "./output1/tidyDataSet.txt" 
